@@ -3,7 +3,7 @@
 Arquitectura de Cliente/Servidor mediante el protocolo HTTP, desarrollado con Spring Boot.
 Todos los recursos de la API pueden ser consumidos mediante peticiones HTTP (POST, GET, PUT y DELETE). La misma está configurada con una Base de Datos MySQL
 
-Aplicación web que permite el manejo de **Productos**, **Clientes** y **Ventas** de un bazar :shopping_cart:. La aplicación permite realizar un CRUD completo (GET, POST, DELETE y PUT) de todas sus clases con validación de datos (datos vacíos, nulos, numéricos y fecha) mediante la annotation _@Valid_. 
+Aplicación web que permite el manejo de **Productos**, **Clientes** y **Ventas** de un bazar :shopping_cart:. La aplicación permite realizar un CRUD completo (GET, POST, DELETE y PUT) de todas sus entidades con validación de datos (datos vacíos, nulos, numéricos y fecha) mediante la annotation _@Valid_. 
 
 Al realizar una **Venta**, a la misma se le debe asignar un **Cliente** (valida en la Base de Datos que el Cliente exista) y una _Lista de productos_. Si la **Venta** es exitosa, se actualiza el stock de **Productos** en la respectiva Base de Datos. También valida que el stock en la Base de Datos sea suficiente para realizar la **Venta**.
 Entre los requerimientos, además de los **GET** (obtener lista completa), **POST** (agregado), **PUT** (modificación) y **DELETE** (eliminación) de cada clase, también se puede:
